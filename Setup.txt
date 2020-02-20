@@ -1,0 +1,6 @@
+void setup() {
+ for(int i=2;i<9;i++){     //set all pin for what i use them
+  pinMode(i, OUTPUT);
+ }
+                             // put your setup code here, to run once:
+}

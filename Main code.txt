@@ -1,0 +1,107 @@
+void loop() {
+  if(COUNT<10)
+{ 
+  COUNT++;
+  delay(1000);
+}
+else
+{
+COUNT=0;
+delay(1000);
+}
+switch(COUNT){       // for representing Zero 
+  case 0:
+  digitalWrite(A,HIGH);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,HIGH);
+  digitalWrite(E,HIGH);
+  digitalWrite(F,HIGH);
+  digitalWrite(G,LOW);
+  break;
+  case 1:           // for representing Zero
+  digitalWrite(A,LOW);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,LOW);
+  digitalWrite(E,LOW);
+  digitalWrite(F,LOW);
+  digitalWrite(G,LOW);
+  break;
+  case 2:          // for representing Zero
+  digitalWrite(A,HIGH);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,LOW);
+  digitalWrite(D,HIGH);
+  digitalWrite(E,HIGH);
+  digitalWrite(F,LOW);
+  digitalWrite(G,HIGH);
+  break;
+  case 3:          // for representing Zero
+  digitalWrite(A,HIGH);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,HIGH);
+  digitalWrite(E,LOW);
+  digitalWrite(F,LOW);
+  digitalWrite(G,HIGH);
+  break;
+  case 4:         // for representing Zero
+  digitalWrite(A,LOW);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,LOW);
+  digitalWrite(E,LOW);
+  digitalWrite(F,HIGH);
+  digitalWrite(G,HIGH);
+  break;
+  case 5:         // for representing Five
+  digitalWrite(A,HIGH);
+  digitalWrite(B,LOW);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,HIGH);
+  digitalWrite(E,LOW);
+  digitalWrite(F,HIGH);
+  digitalWrite(G,HIGH);
+  break;
+  case 6:         // for representing 'Six'
+  digitalWrite(A,HIGH);
+  digitalWrite(B,LOW);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,HIGH);
+  digitalWrite(E,HIGH);
+  digitalWrite(F,HIGH);
+  digitalWrite(G,HIGH);
+  break;
+  case 7:         // for representing 'Seven'
+  digitalWrite(A,HIGH);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,LOW);
+  digitalWrite(E,LOW);
+  digitalWrite(F,LOW);
+  digitalWrite(G,LOW);
+  break;
+  case 8:          // for representing 'Eight'
+  digitalWrite(A,HIGH);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,HIGH);
+  digitalWrite(E,HIGH);
+  digitalWrite(F,HIGH);
+  digitalWrite(G,HIGH);
+  break;
+ case 9:            // for representing 'Nine'
+  digitalWrite(A,HIGH);
+  digitalWrite(B,HIGH);
+  digitalWrite(C,HIGH);
+  digitalWrite(D,HIGH);           //we can not represent '10' by using ony one seven segment
+  digitalWrite(E,LOW);
+  digitalWrite(F,HIGH);
+  digitalWrite(G,HIGH);
+  break;
+}
+}
+                     
+
+
